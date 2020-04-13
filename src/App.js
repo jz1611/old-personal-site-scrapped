@@ -1,21 +1,27 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+// Dependencies
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+
+// Components to render
+import Header from './Components/Header/Header';
+import Footer from './Components/Footer/Footer';
+import Home from './Components/Home/Home';
+import Blog from './Components/Blog/Blog';
+import Incorrect from './Components/Incorrect/Incorrect';
+
+// CSS
 import './App.css';
 
 function App() {
-  const [msg, setMsg] = useState('');
-
-  useEffect(() => {
-    axios
-      .get('/api/hello')
-      .then(res => {
-        setMsg(res.data.message)
-      });
-  });
-
   return (
-    <div>
-      Message: {msg}
+    <div id="App">
+      <Header />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/blog" component={Blog} />
+        <Route path ="/" component={Incorrect} />
+      </Switch>
+      <Footer />
     </div>
   );
 }
