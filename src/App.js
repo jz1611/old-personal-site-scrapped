@@ -7,6 +7,7 @@ import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import Home from './Components/Home/Home';
 import Blog from './Components/Blog/Blog';
+import Contact from './Components/Contact/Contact';
 import Incorrect from './Components/Incorrect/Incorrect';
 
 // CSS
@@ -19,6 +20,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/blog" component={Blog} />
+        <Route exact path="/contact" component={Contact} />
         <Route path ="/" component={Incorrect} />
       </Switch>
       <Footer />

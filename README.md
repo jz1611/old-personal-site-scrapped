@@ -10,3 +10,4 @@ This project will be a re-do of my current portfolio site. Using a React front-e
 ### Dependencies
 - axios
 - react-router-dom
+- moment

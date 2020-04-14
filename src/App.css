@@ -3,4 +3,11 @@
     min-height: 100vh;
     width: 100vw;
     max-width: 100%;
+    background: #333;
+    color: #BBB;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }

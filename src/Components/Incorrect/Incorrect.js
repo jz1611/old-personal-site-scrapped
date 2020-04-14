@@ -7,7 +7,7 @@ import './Incorrect.css';
 export default function Incorrect() {
     return (
         <div>
-            Incorrect
+            Beware! This page does not exist!
         </div>
     );
 }
