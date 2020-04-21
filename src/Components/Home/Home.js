@@ -20,13 +20,17 @@ export default function Home() {
             });
     }, [pause]);
 
+    const summaryClickHandler = () => {
+        alert('Post clicked')
+    }
+
     const mappedPosts = recentPosts.map(post => {
         // Format date from API so it is more user friendly
         var date = new Date(post.date);
         date = moment(date).format('dddd MMMM D Y');
 
         return (
-            <div key={post.id} className="post-summary">
+            <div key={post.id} className="post-summary" onClick={summaryClickHandler}>
                 <h3>{post.title}</h3>
                 <h4>{date}</h4>
                 <h4>{post.topic}</h4>
