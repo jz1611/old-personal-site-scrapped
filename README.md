@@ -17,6 +17,7 @@ This project will be a re-do of my current portfolio site. Using a React front-e
 - axios
 - react-router-dom
 - moment
+- styled-components
 
 ### Routes
 - (/) Home

@@ -1,14 +1,11 @@
 // Dependencies
 import React from 'react';
 
-// CSS
-import './Home.css';
-
 // Declare Home as functional component
 export default function Home() {
     return (
-        <div className="content-container">
-            <div className="info">
+        <div>
+            <div>
                 <section>
                     <h2>About Me</h2>
                     <p>
@@ -26,20 +23,20 @@ export default function Home() {
                         I love learning new things and pushing my physical and intellectual
                         limits.
                     </p>
-                    <p className="bottom-p">
+                    <p>
                         Please check out some of my projects below, and don't be afraid
                         to reach out!
                     </p>
                 </section>
                 <section>
                     <h2>Skills</h2>
-                    <p className="bottom-p">
+                    <p>
                         Coming soon...
                     </p>
                 </section>
                 <section>
                     <h2>Projects</h2>
-                    <p className="bottom-p">
+                    <p>
                         Coming soon...
                     </p>
                 </section>

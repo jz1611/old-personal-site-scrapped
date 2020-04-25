@@ -1,6 +1,7 @@
 // Dependencies
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
+import styled from 'styled-components';
 
 // Components to render
 import Header from './Components/Header/Header';
@@ -10,12 +11,13 @@ import Blog from './Components/Blog/Blog';
 import Contact from './Components/Contact/Contact';
 import BlogPost from './Components/BlogPost/BlogPost';
 
-// CSS
-import './App.css';
+const Page = styled.div`
+  padding: 3rem;
+`;
 
 function App() {
   return (
-    <div id="App">
+    <Page>
       <Header />
       <Switch>
         <Route exact path ="/" component={Home} />
@@ -25,7 +27,7 @@ function App() {
         <Route render={() => <Redirect to={{pathname: "/"}} />} />
       </Switch>
       <Footer />
-    </div>
+    </Page>
   );
 }
 
