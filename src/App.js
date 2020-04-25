@@ -1,6 +1,6 @@
 // Dependencies
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 // Components to render
 import Header from './Components/Header/Header';
@@ -8,7 +8,7 @@ import Footer from './Components/Footer/Footer';
 import Home from './Components/Home/Home';
 import Blog from './Components/Blog/Blog';
 import Contact from './Components/Contact/Contact';
-import Incorrect from './Components/Incorrect/Incorrect';
+import BlogPost from './Components/BlogPost/BlogPost';
 
 // CSS
 import './App.css';
@@ -18,10 +18,11 @@ function App() {
     <div id="App">
       <Header />
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path ="/" component={Home} />
         <Route exact path="/blog" component={Blog} />
+        <Route exact path="/blog/:id" component={BlogPost} />
         <Route exact path="/contact" component={Contact} />
-        <Route path ="/" component={Incorrect} />
+        <Route render={() => <Redirect to={{pathname: "/"}} />} />
       </Switch>
       <Footer />
     </div>

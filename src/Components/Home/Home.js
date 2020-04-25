@@ -1,43 +1,11 @@
 // Dependencies
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import moment from 'moment';
+import React from 'react';
+
 // CSS
 import './Home.css';
 
-// Declare Home as function comonent
+// Declare Home as functional component
 export default function Home() {
-    // Pause variable used to prevent useEffect infinite looping
-    const pause = 0;
-    const [recentPosts, setRecentPosts] = useState([]);
-
-    useEffect(() => {
-        // Get most recent post from API and set the state
-        axios
-            .get('/api/blog/recent')
-            .then(res => {
-                setRecentPosts(res.data);
-            });
-    }, [pause]);
-
-    const summaryClickHandler = () => {
-        alert('Post clicked')
-    }
-
-    const mappedPosts = recentPosts.map(post => {
-        // Format date from API so it is more user friendly
-        var date = new Date(post.date);
-        date = moment(date).format('dddd MMMM D Y');
-
-        return (
-            <div key={post.id} className="post-summary" onClick={summaryClickHandler}>
-                <h3>{post.title}</h3>
-                <h4>{date}</h4>
-                <h4>{post.topic}</h4>
-            </div>
-        )
-    })
-
     return (
         <div className="content-container">
             <div className="info">
@@ -58,27 +26,26 @@ export default function Home() {
                         I love learning new things and pushing my physical and intellectual
                         limits.
                     </p>
-                    <p>
+                    <p className="bottom-p">
                         Please check out some of my projects below, and don't be afraid
                         to reach out!
                     </p>
                 </section>
                 <section>
                     <h2>Skills</h2>
-                    <p>
+                    <p className="bottom-p">
                         Coming soon...
                     </p>
                 </section>
                 <section>
                     <h2>Projects</h2>
-                    <p>
+                    <p className="bottom-p">
                         Coming soon...
                     </p>
                 </section>
             </div>
             <aside>
                 <h2>Recent Posts</h2>
-                {mappedPosts}
             </aside>
         </div>
     );
