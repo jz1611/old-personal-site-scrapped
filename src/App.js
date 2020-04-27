@@ -13,6 +13,8 @@ import BlogPost from './Components/BlogPost/BlogPost';
 
 const Page = styled.div`
   padding: 3rem;
+  max-width: 100%;
+  min-height: 100vh;
 `;
 
 function App() {

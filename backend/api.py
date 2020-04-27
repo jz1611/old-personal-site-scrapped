@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/api/blog/recent/<amount>', methods = ['GET'])
 def recent(amount):
     '''
-    Returns the most recent 3 blog posts for use on the home page.
+    Returns the most recent blog posts for use.
     '''
     if request.method == 'GET':
         amount = int(amount)
@@ -35,5 +35,5 @@ def post(id):
         f = open("posts.json", "r")
         posts = json.loads(f.read())
         f.close()
-
+        
         return jsonify(posts[id])

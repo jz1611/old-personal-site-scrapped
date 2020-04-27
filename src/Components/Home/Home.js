@@ -1,8 +1,28 @@
 // Dependencies
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
 // Declare Home as functional component
 export default function Home() {
+    const amount = 3;
+    const [recent, setRecent] = useState([]);
+
+    useEffect(() => {
+        axios
+            .get(`/api/blog/recent/${amount}`)
+            .then(res => {
+                setRecent(res.data);
+            });
+    }, []);
+
+    const mappedRecent = recent.map(post => {
+        return (
+            <div>
+                {post.id}
+            </div>
+        );
+    });
+
     return (
         <div>
             <div>
@@ -43,6 +63,7 @@ export default function Home() {
             </div>
             <aside>
                 <h2>Recent Posts</h2>
+                {mappedRecent}
             </aside>
         </div>
     );

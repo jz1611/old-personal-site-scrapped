@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -9,38 +7,49 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="110mm"
-   height="110mm"
-   viewBox="0 0 110 110"
-   version="1.1"
    id="svg8"
-   inkscape:version="0.92.4 (fd57863, 2020-04-02)"
-   sodipodi:docname="logo.svg">
-  <defs
-     id="defs2" />
+   version="1.1"
+   viewBox="0 0 117.9273 117.9273"
+   height="4.642807in"
+   width="4.642807in"
+   sodipodi:docname="logo.svg"
+   inkscape:version="0.92.4 (fd57863, 2020-04-02)">
   <sodipodi:namedview
-     id="base"
      pagecolor="#ffffff"
      bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="-163.9595"
-     inkscape:cy="122.46899"
-     inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
-     showgrid="false"
-     inkscape:snap-object-midpoints="true"
      inkscape:window-width="3840"
      inkscape:window-height="2050"
+     id="namedview11"
+     showgrid="false"
+     inkscape:zoom="0.22348485"
+     inkscape:cx="-1042.7821"
+     inkscape:cy="190.85478"
      inkscape:window-x="0"
      inkscape:window-y="50"
      inkscape:window-maximized="1"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0" />
+     inkscape:current-layer="svg8" />
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lstart"
+       refX="0"
+       refY="0"
+       orient="auto">
+      <path
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         style="fill:#50d781;fill-opacity:1;fill-rule:evenodd;stroke:#50d781;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path4546"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -54,52 +63,23 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:groupmode="layer"
-     id="layer2"
-     inkscape:label="Back"
-     transform="translate(-44.703869,-83.520813)">
-    <rect
-       style="fill:#4d4d4d;stroke-width:0.30032331"
-       id="rect3717-3-2"
-       width="110"
-       height="110"
-       x="44.703869"
-       y="83.520813"
-       ry="7.8115048"
-       rx="0" />
-  </g>
-  <g
-     inkscape:label="Front"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(-44.703869,-83.520813)">
-    <rect
-       style="fill:#ff9955;stroke-width:0.27302122"
-       id="rect3717"
-       width="100"
-       height="100"
-       x="49.703869"
-       y="88.520821"
-       ry="6.2366071" />
-    <rect
-       style="fill:#4d4d4d;stroke-width:0.24571911"
-       id="rect3717-3"
-       width="90"
-       height="90"
-       x="54.703869"
-       y="93.520813"
-       ry="4.5357141" />
+     transform="translate(-47.625637,-89.869694)"
+     id="layer1">
+    <circle
+       r="56.46365"
+       cy="148.83334"
+       cx="106.58929"
+       id="path12"
+       style="fill:none;stroke:#50d781;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48.74391937px;line-height:1.25;font-family:'Tlwg Mono';-inkscape-font-specification:'Tlwg Mono';letter-spacing:0px;word-spacing:0px;fill:#ff9955;fill-opacity:1;stroke:none;stroke-width:1.21859789"
-       x="59.979118"
-       y="172.00691"
-       id="text3740"
-       transform="scale(0.96705178,1.0340708)"><tspan
-         sodipodi:role="line"
-         id="tspan3738"
-         x="59.979118"
-         y="172.00691"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Tlwg Mono';-inkscape-font-specification:'Tlwg Mono';fill:#ff9955;stroke-width:1.21859789">&gt;JZ</tspan></text>
+       id="text4544"
+       y="171.56123"
+       x="55.733261"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:62.64017868px;line-height:1.25;font-family:Purisa;-inkscape-font-specification:Purisa;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.65250182"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:62.64017868px;font-family:Purisa;-inkscape-font-specification:Purisa;fill:#000000;fill-opacity:1;stroke-width:0.65250182"
+         y="171.56123"
+         x="55.733261"
+         id="tspan4542">JZ</tspan></text>
   </g>
 </svg>
