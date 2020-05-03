@@ -17,7 +17,7 @@ export default function Home() {
 
     const mappedRecent = recent.map(post => {
         return (
-            <div>
+            <div key={post.id}>
                 {post.id}
             </div>
         );

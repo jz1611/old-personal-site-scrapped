@@ -35,6 +35,10 @@ export default function BlogPost(props) {
     `;
 
     return (
+        post.exists === false
+        ?
+        <div style={{display: 'none'}}>No Posts</div>
+        :
         <Post summary={props.summary}>
             <img src={post.thumbnail} alt={post.title} />
             <h2>{post.title}</h2>

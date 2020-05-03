@@ -35,5 +35,21 @@ def post(id):
         f = open("posts.json", "r")
         posts = json.loads(f.read())
         f.close()
-        
-        return jsonify(posts[id])
+
+        try:
+            info = posts[id]
+            return jsonify(info)
+        except:
+            return {"exists": False}
+
+@app.route('/api/blog/totalPosts', methods = ['GET'])
+def totalPosts():
+    '''
+    Returns total number of blog posts.
+    '''
+    if request.method == 'GET':
+        f = open("posts.json", "r")
+        posts = json.loads(f.read())
+        f.close()
+
+        return jsonify({'postCount': len(posts)})
