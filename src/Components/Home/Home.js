@@ -2,6 +2,9 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
+// Components
+import BlogPost from '../BlogPost/BlogPost';
+
 // Declare Home as functional component
 export default function Home() {
     const amount = 3;
@@ -17,9 +20,7 @@ export default function Home() {
 
     const mappedRecent = recent.map(post => {
         return (
-            <div key={post.id}>
-                {post.id}
-            </div>
+            <BlogPost key={post.id} id={post.id} />
         );
     });
 

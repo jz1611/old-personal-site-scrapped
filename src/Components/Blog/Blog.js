@@ -1,6 +1,5 @@
 // Dependencies
 import React, { useState, useEffect } from 'react';
-import styled from 'styled-components';
 import axios from 'axios';
 
 // Components
@@ -31,32 +30,29 @@ export default function Blog(props) {
         }
     }
 
-    const PageNav = styled.nav``;
-    const PageButton = styled.button``;
-
     return (
         <div>
-            <PageNav>
-                <PageButton onClick={() => clickHandler(-1)}>
+            <nav>
+                <button onClick={() => clickHandler(-1)}>
                     Previous
-                </PageButton>
+                </button>
                 <span>
                     {page}
                 </span>
-                <PageButton onClick={() => clickHandler(1)}>
+                <button onClick={() => clickHandler(1)}>
                     Next
-                </PageButton>
-            </PageNav>
-            <BlogPost id={0 + 10 *  (page - 1)} summary />
-            <BlogPost id={1 + 10 *  (page - 1)} summary />
-            <BlogPost id={2 + 10 *  (page - 1)} summary />
-            <BlogPost id={3 + 10 *  (page - 1)} summary />
-            <BlogPost id={4 + 10 *  (page - 1)} summary />
-            <BlogPost id={5 + 10 *  (page - 1)} summary />
-            <BlogPost id={6 + 10 *  (page - 1)} summary />
-            <BlogPost id={7 + 10 *  (page - 1)} summary />
-            <BlogPost id={8 + 10 *  (page - 1)} summary />
-            <BlogPost id={9 + 10 *  (page - 1)} summary />
+                </button>
+            </nav>
+            <BlogPost id={0 + 10 *  (page - 1)} />
+            <BlogPost id={1 + 10 *  (page - 1)} />
+            <BlogPost id={2 + 10 *  (page - 1)} />
+            <BlogPost id={3 + 10 *  (page - 1)} />
+            <BlogPost id={4 + 10 *  (page - 1)} />
+            <BlogPost id={5 + 10 *  (page - 1)} />
+            <BlogPost id={6 + 10 *  (page - 1)} />
+            <BlogPost id={7 + 10 *  (page - 1)} />
+            <BlogPost id={8 + 10 *  (page - 1)} />
+            <BlogPost id={9 + 10 *  (page - 1)} />
         </div>
     );
 }
