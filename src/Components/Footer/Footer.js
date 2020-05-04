@@ -1,21 +1,23 @@
 // Dependencies
 import React from 'react';
 
-const linkedin = require('./linkedin.svg');
-const github = require('./GitHub_Logo_White.png');
+// CSS
+import './Footer.css';
+
+const linkedin = require('./linkedin.png');
+const github = require('./GitHub-Mark-Light-64px.png');
 
 export default function Footer() {
     return (
-        <footer>
-            <div>
+        <footer id="page-footer">
+            <div id="social-container">
                 <a href="https://www.linkedin.com/in/jeff-zivkovic-34082210b/" target="_blank" rel='noreferrer noopener'>
-                    <img src={linkedin} alt="linkedin logo" />
+                    <img id="linkedin" src={linkedin} alt="linkedin logo" />
                 </a>
                 <a href="https://github.com/jz1611" target="_blank" rel='noreferrer noopener'>
-                    <img src={github} alt="github logo" />
+                    <img id="github" src={github} alt="github logo" />
                 </a>
             </div>
-            <h6>Website created and maintained by Jeff Zivkovic</h6>
         </footer>
     );
 }

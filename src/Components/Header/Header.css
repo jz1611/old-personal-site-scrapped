@@ -1,0 +1,51 @@
+#page-header {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #4C566A;
+}
+
+#header-nav {
+    height: 60%;
+    width: 100%;
+}
+
+#link-list {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.link-container {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #ECEFF4;
+    border-bottom: solid #3B4252 0.25rem;
+}
+
+.link-active {
+    border-bottom: solid #8FBCBB 0.25rem;
+}
+
+#name {
+    height: 40%;
+    font-size: 2rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: #5E81AC;
+}

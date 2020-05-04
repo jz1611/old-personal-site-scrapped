@@ -10,9 +10,12 @@ import Blog from './Components/Blog/Blog';
 import Contact from './Components/Contact/Contact';
 import BlogPost from './Components/BlogPost/BlogPost';
 
+// CSS
+import './App.css';
+
 function App() {
   return (
-    <div>
+    <div id="App">
       <Header />
       <Switch>
         <Route exact path ="/" component={Home} />
